@@ -1,0 +1,31 @@
+From: Markus Koschany <apo@debian.org>
+Date: Sun, 4 Oct 2015 23:48:27 +0200
+Subject: workingDirectory
+
+Fix a FTBFS. The parser class could not be found.
+
+Forwarded: not-needed
+---
+ pom.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+--- a/pom.xml
++++ b/pom.xml
+@@ -247,7 +247,7 @@
+                 <argument>-Jpackage=com.thoughtworks.qdox.parser.impl</argument>
+                 <argument>${basedir}/src/grammar/commentparser.y</argument>
+               </arguments>
+-              <workingDirectory>${project.build.directory}/generated-sources/parser/com/thoughtworks/qdox/parser/impl</workingDirectory>
++              <workingDirectory>src/main/java/com/thoughtworks/qdox/parser/impl</workingDirectory>
+             </configuration>
+           </execution>
+           <execution>
+@@ -269,7 +269,7 @@
+                 <argument>-Jstack=${qdox.javaparser.stack}</argument>
+                 <argument>${basedir}/src/grammar/parser.y</argument>
+               </arguments>
+-              <workingDirectory>${project.build.directory}/generated-sources/parser/com/thoughtworks/qdox/parser/impl</workingDirectory>
++              <workingDirectory>src/main/java/com/thoughtworks/qdox/parser/impl</workingDirectory>
+             </configuration>
+           </execution>
+         </executions>

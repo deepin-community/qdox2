@@ -1,0 +1,4 @@
+
+com.thoughtworks.qdox qdox jar s/.*/2.x/ * *
+junit junit jar s/4\..*/4.x/ * *
+org.mockito mockito-core * s/.*/debian/ * *

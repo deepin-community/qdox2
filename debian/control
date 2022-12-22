@@ -1,0 +1,74 @@
+Source: qdox2
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ byacc-j,
+ debhelper-compat (= 12),
+ default-jdk,
+ default-jdk-doc,
+ jflex (>= 1.7.0),
+ junit4,
+ libmaven-exec-plugin-java,
+ libmaven-javadoc-plugin-java,
+ libmockito-java,
+ maven-debian-helper
+Standards-Version: 4.4.1
+Vcs-Git: https://salsa.debian.org/java-team/qdox2.git
+Vcs-Browser: https://salsa.debian.org/java-team/qdox2
+Homepage: https://github.com/paul-hammant/qdox
+
+Package: libqdox2-java
+Architecture: all
+Depends:
+ ${maven:Depends},
+ ${misc:Depends}
+Suggests:
+ libqdox2-java-doc,
+ ${maven:OptionalDepends}
+Description: quickly parses declarations and Javadoc from Java source
+ QDox quickly parses Java source files looking for key items of
+ interest:
+  * class and interface definitions
+  * member declarations
+  * import statements
+  * JavaDoc comments
+ .
+ QDox ignores all other components of Java source, such as actual method
+ implementations, to avoid overhead. QDox returns a simple document model
+ containing only the declarations and containing enough information to be
+ useful.
+ .
+ This is version 2 of QDox which is backwards incompatible with earlier
+ versions.
+
+Package: libqdox2-java-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends}
+Recommends:
+ ${maven:DocDepends},
+ ${maven:DocOptionalDepends}
+Suggests:
+ libqdox2-java
+Description: Documentation for QDox
+ This package contains the documentation for QDox, generated from
+ Javadoc.
+ .
+ QDox quickly parses Java source files looking for key items of
+ interest:
+  * class and interface definitions
+  * member declarations
+  * import statements
+  * JavaDoc comments
+ .
+ QDox ignores all other components of Java source, such as actual method
+ implementations, to avoid overhead. QDox returns a simple document model
+ containing only the declarations and containing enough information to be
+ useful.
+ .
+ This is version 2 of QDox which is backwards incompatible with earlier
+ versions.

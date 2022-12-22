@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	jflex -d src/main/java/com/thoughtworks/qdox/parser/impl src/grammar/lexer.flex
+	jflex -d src/main/java/com/thoughtworks/qdox/parser/impl src/grammar/commentlexer.flex
+	#FIXME: JFlexLexer.java is the generated output of lexer.flex with jflex 1.7.0
+	#FIXME: plus the old JFlexLexer InputStream constructor
+	cp debian/JFlexLexer.java src/main/java/com/thoughtworks/qdox/parser/impl
+	dh_auto_build
+

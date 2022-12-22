@@ -1,0 +1,2 @@
+
+s/qdox/com.thoughtworks.qdox/ * * s/.*/2.x/ * *

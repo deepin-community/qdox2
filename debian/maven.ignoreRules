@@ -1,0 +1,12 @@
+
+de.jflex maven-jflex-plugin * * * *
+org.apache.maven.plugins maven-assembly-plugin * * * *
+org.apache.maven.plugins maven-changes-plugin * * * *
+org.apache.maven.plugins maven-enforcer-plugin * * * *
+org.apache.maven.plugins maven-failsafe-plugin * * * *
+org.apache.maven.plugins maven-invoker-plugin * * * *
+org.apache.maven.plugins maven-jxr-plugin * * * *
+org.apache.maven.plugins maven-project-info-reports-plugin * * * *
+org.apache.maven.wagon wagon-webdav-jackrabbit * * * *
+org.codehaus.mojo animal-sniffer-maven-plugin * * * *
+org.codehaus.mojo cobertura-maven-plugin * * * *

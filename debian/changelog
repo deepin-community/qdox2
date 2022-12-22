@@ -1,0 +1,97 @@
+qdox2 (2.0.0-1) unstable; urgency=medium
+
+  * New upstream version 2.0.0.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Switch to debhelper-compat = 12.
+
+ -- Markus Koschany <apo@debian.org>  Fri, 13 Dec 2019 00:24:45 +0100
+
+qdox2 (2.0~M10-1) unstable; urgency=medium
+
+  * New upstream version 2.0~M10.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Use canonical VCS URI.
+  * Remove get-orig-source target.
+  * Update copyright years.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 20 Jan 2019 00:38:04 +0100
+
+qdox2 (2.0~M9-2) unstable; urgency=medium
+
+  * Declare compliance with Debian Policy 4.2.1.
+  * d/rules: Remove obsolete inputstreamctor option because it makes the build
+    FTBFS. Tighten B-D on jflex.
+  * Add debian/JFlexLexer.java and add the old JFlexLexer InputStream
+    constructor back.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 02 Oct 2018 18:14:57 +0200
+
+qdox2 (2.0~M9-1) unstable; urgency=medium
+
+  * New upstream version 2.0~M9.
+  * Declare compliance with Debian Policy 4.1.5.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 29 Jul 2018 04:05:56 +0200
+
+qdox2 (2.0~M8-2) unstable; urgency=medium
+
+  * Ignore the test failure for now but forward the issue upstream.
+    (Closes: #893533)
+
+ -- Markus Koschany <apo@debian.org>  Mon, 19 Mar 2018 22:41:15 +0100
+
+qdox2 (2.0~M8-1) unstable; urgency=medium
+
+  * New upstream version 2.0~M8.
+  * Use compat level 11.
+  * Declare compliance with Debian Policy 4.1.3.
+
+ -- Markus Koschany <apo@debian.org>  Thu, 15 Mar 2018 14:50:02 +0100
+
+qdox2 (2.0~M7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - Refreshed the patches
+  * Standards-Version updated to 4.1.0
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 30 Aug 2017 15:12:49 +0200
+
+qdox2 (2.0~M6-1) unstable; urgency=medium
+
+  * New upstream version 2.0~M6.
+
+ -- Markus Koschany <apo@debian.org>  Fri, 28 Jul 2017 13:56:30 +0200
+
+qdox2 (2.0~M5-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release:
+    - Refreshed the patches
+  * Updated the location of the upstream Git repository
+  * Standards-Version updated to 4.0.0
+  * Switch to debhelper level 10
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 30 Jun 2017 23:06:12 +0200
+
+qdox2 (2.0~M3-3) unstable; urgency=medium
+
+  * debian/rules: Use --inputstreamctor option for jflex and fix FTBFS with
+    jflex 1.6.1.
+  * Declare compliance with Debian Policy 3.9.8.
+  * Tighten build-dependency on jflex.
+  * debian/watch: Use version=4.
+
+ -- Markus Koschany <apo@debian.org>  Wed, 27 Jul 2016 19:24:15 +0200
+
+qdox2 (2.0~M3-2) unstable; urgency=medium
+
+  * Fix Vcs-Git URI and use https and git/pkg-java.
+
+ -- Markus Koschany <apo@debian.org>  Wed, 27 Jan 2016 13:54:07 +0100
+
+qdox2 (2.0~M3-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #812548)
+
+ -- Markus Koschany <apo@debian.org>  Mon, 25 Jan 2016 16:01:00 +0100
